@@ -1,0 +1,165 @@
+html, body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-color: #e0e7f1;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 16px;
+}
+
+main {
+    max-width: 900px;
+    margin: 50px auto;
+    background-color: #fafdfe;
+    padding: 20px;
+    box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
+}
+
+main {
+    max-width: 1000px;
+}
+
+section {
+    display: table;
+    width: 100%;
+    border-spacing: 0 10px;
+}
+
+.heading {
+    display: table-row;
+
+}
+
+.heading > .heading__item {
+    display: table-cell;
+
+}
+
+
+.users-list {
+    display: table-row-group;
+
+}
+
+.users-list__user {
+    display: table-row;
+    border-radius: 5px;
+    box-shadow: 0px 2px 4px #b7adada6;
+}
+.users-list__user > * {
+    display: table-cell;
+
+}
+.status{
+    height: 7px;
+    width: 7px;
+    border-radius: 50%;
+    margin: 1px 7px 2px 0px;
+}
+
+.status--active:before {
+    background-color: teal;
+    content: "";
+    display: inline-block;
+    border-radius: 50%;
+    width: 10px;
+    height: 10px;
+    margin-right: 4px;
+}
+
+.status--inactive:before {
+    background-color: brown;
+    content: "";
+    display: inline-block;
+    border-radius: 50%;
+    width: 10px;
+    height: 10px;
+    margin-right: 2px;
+}
+
+
+
+.users-list__user-contact {
+    background-color: #037df4;
+    color: white;
+    border: 1px;
+    border-radius: 5px;
+    padding: 4px 9px 4px 9px;
+    cursor: pointer;
+}
+
+
+.users-list__user-actions {
+    color: #037df4;
+
+}
+
+.user-img {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    margin-left: 8px;
+    vertical-align: text-bottom;
+}
+
+.dots {
+    width: 16px;
+    height: 16px;
+    cursor: pointer;
+    background-image: url(more.png);
+    background-repeat: round;
+    border: none;
+    background-color: transparent;
+
+}
+.icon-div:hover .icon-button{
+visibility: visible;
+}
+
+.user-div {
+    display: inline-block;
+    padding:10px;
+}
+.user-div p:nth-child(2){
+    margin: 0;
+    font-size: 13px;
+    color: grey;
+}
+
+.user-name {
+    margin-block-start: 1.33em;
+    margin-block-end: 1.33em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    font-weight: bold;
+}
+.icon-button{
+    position: absolute;
+     visibility: hidden;
+    display: flex;
+    flex-direction: column;
+}
+.icon-button >button{
+    border: none;
+}
+.icon-button >button:hover{
+    background-color: #d9d4d4;
+    border: none;
+}
+.icon-div{
+    position: relative;
+}
+.users-list__user *:nth-child(4):hover{
+    color: red;
+}
+.users-list__user *:nth-child(4){
+    text-decoration: none;
+    cursor: pointer;
+    color: #0000ee;
+}
+
+.users-list__user > * {
+    vertical-align: middle;
+}
+
+
